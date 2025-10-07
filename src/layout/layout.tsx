@@ -4,10 +4,10 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div className="">
+    <div className="flex flex-col ">
       <Header />
 
-      <main className="max-w-screen px-10 mx-auto min-h-screen">
+      <main className="flex-initial  top-16">
         <Outlet />
       </main>
 

@@ -13,7 +13,7 @@ const Header = () => {
     { to: "/contact", label: "Contact" },
   ];
   return (
-    <header className="grid grid-cols-2  item-center justify-between bg-rose-200 ">
+    <header className="grid grid-cols-2 fixed top-0 left-0 right-0 z-50 item-center justify-between bg-rose-200 h-[10vh] ">
       <div className="flex justify-between item-center gap-5 p-5 md:p-0 bg-stone-500">
         <div>Igati Logo</div>
 
@@ -56,7 +56,7 @@ const Header = () => {
         </Button>
 
         {isMenuOpen && (
-          <div className="bg-[#121907] absolute top-14 right-0 left-0 md:hidden border-t border-border py-4 ">
+          <div className="bg-[#121907]/90 absolute top-14 right-0 left-0 md:hidden border-t border-border py-4 z-50 ">
             <nav className="flex flex-col items-center gap-4">
               {links.map((link) => (
                 <a
