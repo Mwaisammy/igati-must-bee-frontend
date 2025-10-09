@@ -28,14 +28,16 @@ const AboutSection = () => {
     },
   ];
   return (
-    <div className="py-20 h-[400px] ">
-      <div className="flex gap-4 bg-[#0b1105] h-full justify-center  items-center">
-        <div className="bg-white rounded-2xl flex items-center gap-2 text-black px-4 py-1">
+    <div className=" relative min-h-[80vh]  flex flex-col ">
+      <div className="flex gap-4 bg-[#0b1105] flex-1 justify-center py-12 px-6 md:px-16 items-center">
+        <div className="bg-white rounded-full flex items-center gap-2 text-black px-10 py-2">
           <Handshake />
-          <p className="font-semibold">Partner with Us. Bee the change!</p>
+          <p className="font-semibold text-xl md:text-4xl">
+            Partner with Us. Bee the change!
+          </p>
         </div>
       </div>
-      <div className=" h-full grid grid-cols-1 md:grid-cols-4 items-center gap-4">
+      <div className="flex-1 h-full bg-[#212a18] grid grid-cols-1 text-white md:grid-cols-4 items-center gap-4  py-12 px-6 md:px-16 ">
         {about.map((item) => (
           <div key={item.id} className="flex flex-col items-center gap-2">
             <item.icon className="fill-amber-400 text-amber-400" />

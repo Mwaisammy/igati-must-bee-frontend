@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import heroImage from "../../assets/images/hero/igati-bee-keeping.jpg";
+import heroImage from "../../assets/images/hero/igati-bee-keeping-1m-initiative.jpg";
 
 const HeroSection = () => {
   return (
-    <div className="h-[90vh] top-14 md:top-17 relative overflow-hidden">
+    <div className="min-h-[100vh] top-14 md:top-17 relative overflow-hidden">
       <div className="">
         <img
           src={heroImage}
@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center mt-10">
+        <div className="absolute bottom-1/8 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center mt-10">
           <button className="bg-amber-400/80 uppercase hover:bg-amber-500/70 inset-0 bg-opacity-50 text-black font-bold py-4 px-6 text-xl md:text-2xl cursor-pointer ">
             <Link to="/contact">Contact Us</Link>
           </button>
